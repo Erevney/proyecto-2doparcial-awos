@@ -18,7 +18,7 @@ let productoSchema = new Schema ({
     },
     categoria: {
         type: Schema.Types.String,
-        ref: 'Categoria'
+        required: [true, 'La categoria es necesaria']  
     },
     usuario: {
         type: Schema.Types.String,
